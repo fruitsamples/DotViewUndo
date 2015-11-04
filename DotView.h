@@ -3,7 +3,7 @@
 @interface DotView : NSView {
     // Instance variables
     NSPoint center;
-    float radius;
+    CGFloat radius;
     NSColor *color;
 }
 
@@ -25,8 +25,8 @@
 // Accessors for attributes for the dot
 - (void)setCenter:(NSPoint)newCenter;
 - (NSPoint)center;
-- (void)setRadius:(float)newRadius;
-- (float)radius;
+- (void)setRadius:(CGFloat)newRadius;
+- (CGFloat)radius;
 - (void)setColor:(NSColor *)newColor;
 - (NSColor *)color;
 

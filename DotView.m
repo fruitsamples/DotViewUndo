@@ -129,7 +129,7 @@
     return center;
 }
 
-- (void)setRadius:(float)newRadius {
+- (void)setRadius:(CGFloat)newRadius {
     if (radius != newRadius) {
 	// The undo
 	[[[[self window] undoManager] prepareWithInvocationTarget:self] setRadius:radius];
@@ -140,7 +140,7 @@
     }
 }
 
-- (float)radius {
+- (CGFloat)radius {
     return radius;
 }
 
@@ -179,7 +179,7 @@
 // setters.
 
 - (void)changeSize:(id)sender {
-    [self setRadius:[sender floatValue]];
+    [self setRadius:[sender doubleValue]];
 }
 
 - (void)changeColor:(id)sender {
